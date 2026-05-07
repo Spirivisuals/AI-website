@@ -1,34 +1,42 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight } from 'lucide-react';
+import { LayoutGrid, Send } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex flex-col justify-center items-center text-center px-4 pt-24">
+    <section className="relative min-h-[90vh] flex flex-col justify-center items-center text-center px-4 pt-24 md:pt-32">
+      {/* Background Stars */}
+      <div className="absolute top-[20%] left-[10%] text-cyan-400 opacity-80 animate-pulse pointer-events-none">
+         <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" /></svg>
+      </div>
+      <div className="absolute top-[35%] right-[15%] text-gray-300 opacity-60 animate-pulse delay-700 pointer-events-none">
+         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" /></svg>
+      </div>
+
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="max-w-5xl mx-auto z-10"
+        className="max-w-6xl mx-auto z-10"
       >
-        <h1 className="text-5xl sm:text-6xl md:text-8xl font-heading font-semibold tracking-tight leading-[1.05] mb-8">
-          Frame by frame.<br />
-          Built to <span className="font-serif italic font-medium text-white/95">perform.</span>
+        <h1 className="text-[2.25rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] font-sans font-bold tracking-tight leading-[1.1] mb-6">
+          <span className="whitespace-nowrap">Visuals that convert.</span><br />
+          <span className="font-serif italic font-normal text-gray-200 tracking-normal block mt-3 lg:mt-5">Edits that engage.</span>
         </h1>
         
-        <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-light">
-          I create video edits that turn views into engagement.
+        <p className="text-lg md:text-2xl text-gray-400 mb-16 max-w-3xl mx-auto font-light leading-relaxed">
+          Strategic video editing designed to turn your viewers into loyal clients and elevate your brand's presence.
         </p>
         
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#work" className="group relative px-8 py-4 bg-white text-primary-dark rounded-full font-medium text-lg overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(255,255,255,0.2)] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)]">
-            <span className="relative z-10 flex items-center gap-2">
-              View Work <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </span>
+        <div className="flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-4 w-full px-4 max-w-[400px] sm:max-w-none mx-auto">
+          <a href="#work" className="w-[calc(50%-6px)] sm:w-auto group flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-8 py-3.5 sm:py-4 bg-white text-black rounded-full font-bold text-[14px] sm:text-[15px] transition-transform hover:scale-105 active:scale-95 shadow-xl">
+            <LayoutGrid className="w-4 h-4 sm:w-5 sm:h-5" />
+            projects
           </a>
           
-          <a href="#contact" className="px-8 py-4 rounded-full font-medium text-lg border border-white/20 hover:bg-white/10 transition-colors backdrop-blur-sm text-gray-300 hover:text-white">
-            Contact Me
+          <a href="#contact" className="w-[calc(50%-6px)] sm:w-auto group flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-8 py-3.5 sm:py-4 bg-white text-black rounded-full font-bold text-[14px] sm:text-[15px] transition-transform hover:scale-105 active:scale-95 shadow-xl">
+            <Send className="w-4 h-4 sm:w-5 sm:h-5" />
+            contact
           </a>
         </div>
       </motion.div>
