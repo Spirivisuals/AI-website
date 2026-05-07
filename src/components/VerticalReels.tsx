@@ -9,16 +9,16 @@ const VerticalReels = () => {
           <p className="text-gray-400 text-lg">High-impact vertical edits designed to retain attention.</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-[360px] sm:max-w-[720px] md:max-w-none w-full mx-auto">
+        {/* Исправленная сетка: 1 колонка на мобилках, 3 колонки на ПК (начиная с md) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[360px] md:max-w-none w-full mx-auto">
+          
           {/* Card 1 */}
-          <div
-            className="w-full aspect-[9/16] relative rounded-xl md:rounded-[2rem] overflow-hidden bg-white/5 border border-white/10 shadow-xl"
-          >
+          <div className="w-full aspect-[9/16] relative rounded-2xl md:rounded-[2rem] overflow-hidden bg-white/5 border border-white/10 shadow-xl">
             <video
-              src="30k_business.mp4"
+              src="/30k_business.mp4"
               poster="https://i.ibb.co/7NYrxQnt/Screenshot-2026-05-07-at-19-38-53.png"
-              className="w-full h-full object-cover"
-              style={{ position: 'relative', zIndex: 999, pointerEvents: 'auto' }}
+              className="w-full h-full object-cover pointer-events-auto"
+              style={{ position: 'relative', zIndex: 50 }}
               preload="metadata"
               controls
               playsInline
@@ -26,14 +26,12 @@ const VerticalReels = () => {
           </div>
           
           {/* Card 2 */}
-          <div
-            className="w-full aspect-[9/16] relative rounded-xl md:rounded-[2rem] overflow-hidden bg-white/5 border border-white/10 shadow-xl"
-          >
+          <div className="w-full aspect-[9/16] relative rounded-2xl md:rounded-[2rem] overflow-hidden bg-white/5 border border-white/10 shadow-xl">
             <video
-              src="Pablo.mp4"
+              src="/Pablo.mp4"
               poster="https://i.ibb.co/0pffyLV9/Screenshot-2026-05-07-at-19-38-01.png"
-              className="w-full h-full object-cover"
-              style={{ position: 'relative', zIndex: 999, pointerEvents: 'auto' }}
+              className="w-full h-full object-cover pointer-events-auto"
+              style={{ position: 'relative', zIndex: 50 }}
               preload="metadata"
               controls
               playsInline
@@ -41,19 +39,18 @@ const VerticalReels = () => {
           </div>
 
           {/* Card 3 */}
-          <div
-            className="w-full aspect-[9/16] relative rounded-xl md:rounded-[2rem] overflow-hidden bg-white/5 border border-white/10 shadow-xl sm:col-span-2 md:col-span-1 mx-auto sm:max-w-[360px] md:max-w-none w-full"
-          >
+          <div className="w-full aspect-[9/16] relative rounded-2xl md:rounded-[2rem] overflow-hidden bg-white/5 border border-white/10 shadow-xl">
             <video
-              src="Crypto_reel.mp4"
+              src="/Crypto_reel.mp4"
               poster="https://i.ibb.co/FLRG1w5n/Screenshot-2026-05-07-at-19-37-31.png"
-              className="w-full h-full object-cover"
-              style={{ position: 'relative', zIndex: 999, pointerEvents: 'auto' }}
+              className="w-full h-full object-cover pointer-events-auto"
+              style={{ position: 'relative', zIndex: 50 }}
               preload="metadata"
               controls
               playsInline
             />
           </div>
+
         </div>
       </div>
     </section>
