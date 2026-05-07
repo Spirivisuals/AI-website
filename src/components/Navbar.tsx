@@ -30,8 +30,8 @@ const Navbar = () => {
         
         <nav className="hidden md:flex flex-1 justify-center items-center gap-8 text-[15px] font-medium text-gray-400">
           <a href="#hero" className="hover:text-white transition-colors">home</a>
-          <a href="#about" className="hover:text-white transition-colors">about</a>
           <a href="#work" className="hover:text-white transition-colors">projects</a>
+          <a href="#about" className="hover:text-white transition-colors">about</a>
         </nav>
 
         <div className="flex justify-end items-center">
@@ -42,6 +42,7 @@ const Navbar = () => {
         </div>
       </div>
     </header>
+
   );
 };
 
