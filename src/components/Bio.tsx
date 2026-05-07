@@ -4,7 +4,7 @@ const Bio = () => {
   const tags = ["premiere pro", "after effects"];
 
   return (
-    <section className="py-20 md:py-24 px-4 sm:px-6 w-full">
+    <section className="py-20 md:py-24 px-4 sm:px-6 w-auto h-screen">
       <div className="max-w-3xl mx-auto flex flex-col items-center text-center">
         <div className="flex flex-col items-center w-full">
           {/* Photo */}

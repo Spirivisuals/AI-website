@@ -2,7 +2,7 @@ import React from 'react';
 
 const VerticalReels = () => {
   return (
-    <section className="py-24 px-6 w-full">
+    <section className="py-24 px-6 w-auto h-screen">
       <div className="max-w-6xl mx-auto">
         <div className="mb-14 text-center md:text-left">
           <h2 className="text-4xl md:text-5xl font-sans font-bold mb-3">Selected Works</h2>
