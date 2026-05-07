@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'motion/react';
 
 const Bio = () => {
   const tags = ["premiere pro", "after effects"];
@@ -7,13 +6,7 @@ const Bio = () => {
   return (
     <section className="py-20 md:py-24 px-4 sm:px-6 w-full">
       <div className="max-w-3xl mx-auto flex flex-col items-center text-center">
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-col items-center w-full"
-        >
+        <div className="flex flex-col items-center w-full">
           {/* Photo */}
           <div className="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden border border-white/5 shadow-2xl bg-white/5 flex items-center justify-center mb-6">
             <img 
@@ -36,36 +29,24 @@ const Bio = () => {
           <h2 className="text-[2.75rem] sm:text-6xl md:text-7xl lg:text-[5.5rem] font-sans font-bold tracking-tight mb-6 md:mb-8">
             I'm <span className="font-serif italic font-normal text-gray-200 tracking-normal pl-1">Spiridon</span>
           </h2>
-        </motion.div>
+        </div>
 
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="space-y-4 md:space-y-6 text-[16px] leading-[1.6] md:text-[1.25rem] text-gray-300 font-light"
-        >
+        <div className="space-y-4 md:space-y-6 text-[16px] leading-[1.6] md:text-[1.25rem] text-gray-300 font-light">
           <p>
             Hi, I'm Spiridon. I specialize in high-impact video editing designed to convert views into tangible business results. My focus is on crafting engaging visual narratives that capture attention, drive audience action, and attract your ideal clients.
           </p>
           <p>
             I approach every project with a deep understanding of audience retention and marketing goals — shaping cohesive videos that elevate how your brand is perceived and remembered.
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex flex-wrap items-center justify-center gap-3 md:gap-4 mt-8 md:mt-12 w-full"
-        >
+        <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4 mt-8 md:mt-12 w-full">
             {tags.map((tag, idx) => (
               <div key={idx} className="px-5 py-2.5 rounded-xl md:rounded-2xl bg-transparent border border-white/10 text-[14px] md:text-[15px] font-medium text-gray-300 lowercase tracking-wide">
                 {tag}
               </div>
             ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { motion } from 'motion/react';
 import { Send } from 'lucide-react';
 
 const Navbar = () => {
@@ -14,10 +13,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <motion.header
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+    <header
       className={`fixed top-4 left-0 right-0 z-50 px-4 transition-all duration-300`}
     >
       <div className={`max-w-5xl mx-auto px-4 py-3 flex items-center justify-between rounded-[2rem] transition-all duration-500 ease-in-out ${
@@ -45,7 +41,7 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-    </motion.header>
+    </header>
   );
 };
 

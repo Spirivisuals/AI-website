@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'motion/react';
 import { LayoutGrid, Send } from 'lucide-react';
 
 const Hero = () => {
@@ -13,12 +12,7 @@ const Hero = () => {
          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" /></svg>
       </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="max-w-6xl mx-auto z-10"
-      >
+      <div className="max-w-6xl mx-auto z-10">
         <h1 className="text-[2.25rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] font-sans font-bold tracking-tight leading-[1.1] mb-6">
           <span className="whitespace-nowrap">Visuals that convert.</span><br />
           <span className="font-serif italic font-normal text-gray-200 tracking-normal block mt-3 lg:mt-5">Edits that engage.</span>
@@ -39,7 +33,7 @@ const Hero = () => {
             contact
           </a>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };
