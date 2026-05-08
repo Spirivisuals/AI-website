@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Bio = () => {
-  const tags = ["premiere pro", "after effects"];
+  const tags =["premiere pro", "after effects"];
 
   return (
-    <section className="pt-28 pb-16 md:pt-36 md:pb-20 px-4 sm:px-6 w-screen">
+    <section className="pt-24 pb-16 md:pt-32 md:pb-20 px-4 sm:px-6 w-screen">
       <div className="max-w-3xl mx-auto flex flex-col items-center text-center">
         <div className="flex flex-col items-center w-full">
           
