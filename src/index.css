@@ -20,7 +20,22 @@
   }
 
   body {
-    @apply bg-primary-dark text-white font-sans antialiased selection:bg-neon-blue/30 selection:text-white overscroll-none overflow-x-hidden;
+    @apply text-white font-sans antialiased selection:bg-neon-blue/30 selection:text-white overscroll-none overflow-x-hidden;
+    
+    /* Основной очень темный цвет (почти черный космос) */
+    background-color: #05070d;
+    
+    /* Создаем туманность с помощью мягких радиальных градиентов */
+    background-image: 
+      /* Главный акцентный свет слева (профессиональный глубокий синий/циан) */
+      radial-gradient(circle at 15% 40%, rgba(20, 75, 130, 0.35) 0%, transparent 45%),
+      /* Едва заметное поддерживающее свечение сверху по центру */
+      radial-gradient(circle at 50% 0%, rgba(10, 25, 55, 0.4) 0%, transparent 40%),
+      /* Темно-синяя глубина справа внизу */
+      radial-gradient(circle at 85% 70%, rgba(15, 30, 60, 0.3) 0%, transparent 50%);
+    
+    /* Фон фиксируется, чтобы при скролле туманность стояла на месте — выглядит очень премиально */
+    background-attachment: fixed;
   }
 }
 
