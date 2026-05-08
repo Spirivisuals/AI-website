@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Send, Twitter } from 'lucide-react';
+import { Mail, Send } from 'lucide-react'; // Удален Twitter из импорта
 
 const CTA = () => {
   return (
@@ -49,7 +49,11 @@ const CTA = () => {
               <div 
                 className="w-full px-6 sm:px-8 py-3.5 rounded-full font-bold text-[14px] sm:text-[15px] bg-white text-black flex items-center justify-center gap-2 shadow-xl hover:scale-105 active:scale-95 transition-transform"
               >
-                <Twitter className="w-4 h-4" /> Twitter
+                {/* Новый логотип X (бывший Twitter) */}
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+                </svg>
+                Twitter
               </div>
             </a>
           </div>
