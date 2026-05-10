@@ -16,7 +16,7 @@ const VerticalReels = () => {
           <div className="w-full max-w-[320px] aspect-[9/16] relative rounded-[2rem] overflow-hidden bg-white/5 border border-white/10 shadow-xl" style={{ transform: 'translateZ(0)' }}>
             <video
               src="/videos/30k_business.mp4"
-              poster="https://i.ibb.co/7NYrxQnt/Screenshot-2026-05-07-at-19-38-53.png"
+              poster="/images/Business_poster.webp"
               className="w-full h-full object-cover pointer-events-auto"
               style={{ position: 'relative', zIndex: 5 }}
               preload="metadata"
@@ -29,7 +29,7 @@ const VerticalReels = () => {
           <div className="w-full max-w-[320px] aspect-[9/16] relative rounded-[2rem] overflow-hidden bg-white/5 border border-white/10 shadow-xl" style={{ transform: 'translateZ(0)' }}>
             <video
               src="/videos/Pablo.MP4"
-              poster="https://i.ibb.co/0pffyLV9/Screenshot-2026-05-07-at-19-38-01.png"
+              poster="/images/Pablo_poster.webp"
               className="w-full h-full object-cover pointer-events-auto"
               style={{ position: 'relative', zIndex: 5 }}
               preload="metadata"
@@ -42,7 +42,7 @@ const VerticalReels = () => {
           <div className="w-full max-w-[320px] aspect-[9/16] relative rounded-[2rem] overflow-hidden bg-white/5 border border-white/10 shadow-xl" style={{ transform: 'translateZ(0)' }}>
             <video
               src="/videos/Crypto_reel.MP4"
-              poster="https://i.ibb.co/FLRG1w5n/Screenshot-2026-05-07-at-19-37-31.png"
+              poster="/images/Crypto_poster.webp"
               className="w-full h-full object-cover pointer-events-auto"
               style={{ position: 'relative', zIndex: 5 }}
               preload="metadata"
