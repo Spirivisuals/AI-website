@@ -23,7 +23,7 @@ const Navbar = () => {
         {/* Левая часть (Логотип) */}
         <div className="flex items-center gap-3 relative z-10">
           <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center overflow-hidden border border-white/10 shrink-0">
-             <img src="https://i.ibb.co/jv7zygfw/2-ABF3-AC1-5-C59-40-CE-B336-1-E78-B8973-C31-2.jpg" alt="Logo" className="w-full h-full object-cover" onError={(e) => (e.target as HTMLImageElement).style.display = 'none'} />
+             <img src="/images/Main_picture.webp" alt="Logo" className="w-full h-full object-cover" onError={(e) => (e.target as HTMLImageElement).style.display = 'none'} />
           </div>
           <div className="text-xl font-heading font-medium tracking-wide text-white">
             spirivisuals
