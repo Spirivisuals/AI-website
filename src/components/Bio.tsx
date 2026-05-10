@@ -10,7 +10,7 @@ const Bio = () => {
           
           <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border border-white/5 shadow-2xl bg-white/5 flex items-center justify-center mb-5">
             <img 
-              src="https://i.ibb.co/jkXRxLx8/IMG-1043.avif" 
+              src="/images/Bio_picture.webp" 
               alt="Spiridon" 
               className="w-full h-full object-cover"
               onError={(e) => {
