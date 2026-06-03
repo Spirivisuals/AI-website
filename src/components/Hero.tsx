@@ -7,29 +7,29 @@ const Hero = () => {
       
       {/* Background Stars (Constellation effect) */}
       
-      {/* 1. Большая голубая звездочка (Слева сверху) - Опущена ниже на мобилках */}
+      {/* 1. Большая голубая звездочка (Слева сверху) - Оставлена на мобилках */}
       <div className="absolute top-[18%] left-[5%] sm:top-[15%] sm:left-[8%] md:top-[20%] md:left-[10%] text-cyan-400 opacity-100 animate-pulse pointer-events-none drop-shadow-[0_0_15px_rgba(34,211,238,0.8)]">
          <svg className="w-8 h-8 md:w-10 md:h-10" viewBox="0 0 24 24" fill="currentColor">
            <path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" />
          </svg>
       </div>
       
-      {/* 2. Средняя белая звездочка (Справа сверху) - Опущена ниже на мобилках */}
+      {/* 2. Средняя белая звездочка (Справа сверху) - Оставлена на мобилках */}
       <div className="absolute top-[32%] right-[5%] sm:top-[28%] sm:right-[10%] md:top-[30%] md:right-[15%] text-gray-100 opacity-90 animate-pulse delay-700 pointer-events-none drop-shadow-[0_0_12px_rgba(255,255,255,0.7)]">
          <svg className="w-5 h-5 md:w-6 md:h-6" viewBox="0 0 24 24" fill="currentColor">
            <path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" />
          </svg>
       </div>
 
-      {/* 3. НОВАЯ: Маленькая голубая звездочка (Слева по центру/снизу) */}
-      <div className="absolute top-[60%] left-[6%] sm:top-[65%] sm:left-[10%] md:top-[65%] md:left-[12%] text-cyan-400 opacity-80 animate-pulse delay-300 pointer-events-none drop-shadow-[0_0_10px_rgba(34,211,238,0.6)]">
+      {/* 3. НОВАЯ: Маленькая голубая звездочка (Слева по центру/снизу) - СКРЫТА НА МОБИЛКАХ (hidden sm:block) чтобы не резать текст */}
+      <div className="hidden sm:block absolute top-[60%] left-[10%] md:top-[65%] md:left-[12%] text-cyan-400 opacity-80 animate-pulse delay-300 pointer-events-none drop-shadow-[0_0_10px_rgba(34,211,238,0.6)]">
          <svg className="w-4 h-4 md:w-5 md:h-5" viewBox="0 0 24 24" fill="currentColor">
            <path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" />
          </svg>
       </div>
 
-      {/* 4. НОВАЯ: Крошечная белая звездочка (Справа снизу около кнопок) */}
-      <div className="absolute top-[78%] right-[8%] sm:top-[75%] sm:right-[12%] md:top-[80%] md:right-[18%] text-gray-200 opacity-70 animate-pulse delay-500 pointer-events-none drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">
+      {/* 4. НОВАЯ: Крошечная белая звездочка (Справа снизу) - СКРЫТА НА МОБИЛКАХ */}
+      <div className="hidden sm:block absolute top-[75%] right-[12%] md:top-[80%] md:right-[18%] text-gray-200 opacity-70 animate-pulse delay-500 pointer-events-none drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">
          <svg className="w-3 h-3 md:w-4 md:h-4" viewBox="0 0 24 24" fill="currentColor">
            <path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" />
          </svg>
@@ -38,11 +38,13 @@ const Hero = () => {
       {/* Контент Hero */}
       <div className="max-w-6xl mx-auto z-10 relative">
         <h1 className="text-[2.25rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] font-sans font-bold tracking-tight leading-[1.1] mb-6">
-          <span className="sm:whitespace-nowrap">Precision in every frame.</span><br />
+          {/* Добавлен скрытый на ПК перенос строки, чтобы на мобилках было "Precision in \n every frame." */}
+          <span className="sm:whitespace-nowrap">Precision in <br className="block sm:hidden" />every frame.</span><br />
           <span className="font-serif italic font-normal text-gray-200 tracking-normal block mt-3 lg:mt-5">Storytelling driven by rhythm.</span>
         </h1>
         
-        <p className="text-lg md:text-2xl text-gray-400 mb-16 max-w-3xl mx-auto font-light leading-relaxed">
+        {/* Увеличен межстрочный интервал (leading-[1.7]), текст теперь "дышит" */}
+        <p className="text-[17px] md:text-2xl text-gray-400 mb-16 max-w-2xl mx-auto font-light leading-[1.7] md:leading-relaxed px-2 sm:px-0">
           High-end video editing and motion design. Built to hold your audience's attention without the visual clutter.
         </p>
         
