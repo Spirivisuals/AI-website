@@ -38,12 +38,12 @@ const Hero = () => {
       {/* Контент Hero */}
       <div className="max-w-6xl mx-auto z-10 relative">
         <h1 className="text-[2.25rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] font-sans font-bold tracking-tight leading-[1.1] mb-6">
-          <span className="whitespace-nowrap">Visuals that convert.</span><br />
-          <span className="font-serif italic font-normal text-gray-200 tracking-normal block mt-3 lg:mt-5">Edits that engage.</span>
+          <span className="sm:whitespace-nowrap">Precision in every frame.</span><br />
+          <span className="font-serif italic font-normal text-gray-200 tracking-normal block mt-3 lg:mt-5">Storytelling driven by rhythm.</span>
         </h1>
         
         <p className="text-lg md:text-2xl text-gray-400 mb-16 max-w-3xl mx-auto font-light leading-relaxed">
-          Strategic video editing designed to turn your viewers into loyal clients and elevate your brand's presence.
+          High-end video editing and motion design. Built to hold your audience's attention without the visual clutter.
         </p>
         
         <div className="flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-4 w-full px-4 max-w-[400px] sm:max-w-none mx-auto">
