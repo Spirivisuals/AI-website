@@ -6,7 +6,7 @@ const VerticalReels = () => {
       <div className="max-w-6xl mx-auto">
         <div className="mb-14 text-center md:text-left md:pl-6">
           <h2 className="text-3xl md:text-4xl font-sans font-bold mb-3">Selected Works</h2>
-          <p className="text-gray-400 text-lg">High-impact vertical edits designed to retain attention.</p>
+          <p className="text-gray-400 text-lg">Vertical edits built for maximum retention.</p>
         </div>
 
         {/* Исправленная сетка: 1 колонка на мобилках, 3 колонки на ПК (начиная с md) */}
