@@ -33,10 +33,10 @@ const Bio = () => {
 
         <div className="space-y-4 md:space-y-5 text-[16px] leading-[1.6] md:text-[1.25rem] text-gray-300 font-light">
           <p>
-            Hi, I'm Spiridon. I specialize in high-impact video editing designed to convert views into tangible business results. My focus is on crafting engaging visual narratives that capture attention, drive audience action, and attract your ideal clients.
+            I’m a video editor and motion designer focused on visual clarity. My job is to strip away the noise and build narratives that actually flow.
           </p>
           <p>
-            I approach every project with a deep understanding of audience retention and marketing goals — shaping cohesive videos that elevate how your brand is perceived and remembered.
+            Whether I'm structuring a complex long-form project or cutting a fast-paced short, I rely on strict pacing and clean design to hold the audience's attention from the first frame to the last.
           </p>
         </div>
 
