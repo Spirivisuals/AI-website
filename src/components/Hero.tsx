@@ -3,18 +3,18 @@ import { LayoutGrid, Send } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex flex-col justify-center items-center text-center px-4 pt-24 md:pt-32">
+    <section className="relative min-h-[100dvh] flex flex-col justify-center items-center text-center px-4 pt-20 pb-10">
       
       {/* Background Stars (Constellation effect) */}
       
-      {/* 1. Большая голубая звездочка (Слева сверху) */}
+      {/* 1. Большая голубая звездочка (Слева сверху) - Ваши настройки сохранены */}
       <div className="absolute top-[29%] left-[4%] sm:top-[15%] sm:left-[8%] md:top-[18%] md:left-[15%] lg:top-[20%] lg:left-[20%] text-cyan-400 opacity-100 animate-pulse pointer-events-none drop-shadow-[0_0_15px_rgba(34,211,238,0.8)]">
          <svg className="w-7 h-7 md:w-10 md:h-10" viewBox="0 0 24 24" fill="currentColor">
            <path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" />
          </svg>
       </div>
       
-      {/* 2. Средняя белая звездочка (Справа сверху) */}
+      {/* 2. Средняя белая звездочка (Справа сверху) - Ваши настройки сохранены */}
       <div className="absolute top-[65%] right-[8%] sm:top-[20%] sm:right-[10%] md:top-[22%] md:right-[15%] lg:top-[25%] lg:right-[18%] text-gray-100 opacity-90 animate-pulse delay-700 pointer-events-none drop-shadow-[0_0_12px_rgba(255,255,255,0.7)]">
          <svg className="w-4 h-4 md:w-6 md:h-6" viewBox="0 0 24 24" fill="currentColor">
            <path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" />
@@ -37,7 +37,7 @@ const Hero = () => {
 
       {/* Контент Hero */}
       <div className="max-w-6xl mx-auto z-10 relative w-full">
-        {/* Здесь я изменил mb-6 sm:mb-8 на mb-10 sm:mb-12, чтобы сдвинуть подстрочник вниз */}
+        {/* Пункт 1 выполнен вами: mb-4 sm:mb-6 отлично связывает заголовок и подстрочник */}
         <h1 className="font-sans font-bold tracking-tight leading-[1.1] mb-4 sm:mb-6 flex flex-col items-center">
           {/* Первая строка: Clean cuts. (Жесткая однострочность) */}
           <span className="block whitespace-nowrap text-[14vw] sm:text-[4.5rem] md:text-[5.5rem] lg:text-[6.5rem]">
@@ -49,8 +49,8 @@ const Hero = () => {
           </span>
         </h1>
         
-        {/* Подстрочник */}
-        <p className="text-[16px] sm:text-[17px] md:text-2xl text-gray-400 mb-12 sm:mb-16 max-w-2xl mx-auto font-light leading-[1.6] md:leading-relaxed px-2 sm:px-0">
+        {/* Пункт 2 выполнен мной: отступ СНИЗУ уменьшен до mb-8 sm:mb-10 */}
+        <p className="text-[16px] sm:text-[17px] md:text-2xl text-gray-400 mb-8 sm:mb-10 max-w-2xl mx-auto font-light leading-[1.6] md:leading-relaxed px-2 sm:px-0">
           Advanced video editing and motion graphics. Turning raw footage into pure, <span className="whitespace-nowrap">engaging storytelling.</span>
         </p>
         
