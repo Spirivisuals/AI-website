@@ -6,11 +6,11 @@ const CTA = () => {
     <section className="py-24 min-h-[70vh] px-4 sm:px-6 relative flex flex-col justify-center items-center overflow-hidden">
       <div className="max-w-4xl mx-auto text-center z-10 w-full relative">
         {/* Subtle decorative stars */}
-        <div className="absolute top-10 right-0 md:-right-20 text-gray-300 opacity-70 animate-pulse delay-300 pointer-events-none">
-           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" /></svg>
+        <div className="absolute top-9 right-1 md:-right-20 text-gray-300 opacity-70 animate-pulse delay-300 pointer-events-none">
+           <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" /></svg>
         </div>
-        <div className="absolute bottom-20 left-0 md:-left-10 text-cyan-500/30 opacity-60 animate-pulse delay-500 pointer-events-none">
-           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" /></svg>
+        <div className="absolute bottom-15 left-1 md:-left-10 text-cyan-500/30 opacity-60 animate-pulse delay-500 pointer-events-none">
+           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" /></svg>
         </div>
 
         <div>
