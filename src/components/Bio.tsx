@@ -36,7 +36,7 @@ const Bio = () => {
             I’m a video editor and motion designer focused on visual clarity. My job is to strip away the noise and build narratives that actually flow.
           </p>
           <p>
-            Whether I'm structuring a complex long-form project or cutting a fast-paced short, I rely on strict pacing and clean design to hold the audience's attention from the first frame to the last.
+            Whether I'm structuring a complex long-form project or cutting a fast-paced short, I rely on strict pacing and clean design to hold the audience's attention from the first <span className="whitespace-nowrap">frame to the last.</span>
           </p>
         </div>
 
