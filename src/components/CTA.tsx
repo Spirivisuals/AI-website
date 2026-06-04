@@ -9,7 +9,7 @@ const CTA = () => {
         <div className="absolute top-9 right-1 md:-right-20 text-gray-300 opacity-70 animate-pulse delay-300 pointer-events-none">
            <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" /></svg>
         </div>
-        <div className="absolute bottom-28 left-1 md:-left-10 text-cyan-500/30 opacity-60 animate-pulse delay-500 pointer-events-none">
+        <div className="absolute bottom-33 left-1 md:-left-10 text-cyan-500/30 opacity-60 animate-pulse delay-500 pointer-events-none">
            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" /></svg>
         </div>
 
