@@ -8,14 +8,14 @@ const Hero = () => {
       {/* Background Stars (Constellation effect) */}
       
       {/* 1. Большая голубая звездочка (Слева сверху) */}
-      <div className="absolute top-[35%] left-[3%] sm:top-[15%] sm:left-[8%] md:top-[18%] md:left-[15%] lg:top-[20%] lg:left-[20%] text-cyan-400 opacity-100 animate-pulse pointer-events-none drop-shadow-[0_0_15px_rgba(34,211,238,0.8)]">
-         <svg className="w-8 h-8 md:w-10 md:h-10" viewBox="0 0 24 24" fill="currentColor">
+      <div className="absolute top-[27%] left-[3%] sm:top-[15%] sm:left-[8%] md:top-[18%] md:left-[15%] lg:top-[20%] lg:left-[20%] text-cyan-400 opacity-100 animate-pulse pointer-events-none drop-shadow-[0_0_15px_rgba(34,211,238,0.8)]">
+         <svg className="w-6 h-6 md:w-10 md:h-10" viewBox="0 0 24 24" fill="currentColor">
            <path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" />
          </svg>
       </div>
       
       {/* 2. Средняя белая звездочка (Справа сверху) */}
-      <div className="absolute top-[56%] right-[5%] sm:top-[20%] sm:right-[10%] md:top-[22%] md:right-[15%] lg:top-[25%] lg:right-[18%] text-gray-100 opacity-90 animate-pulse delay-700 pointer-events-none drop-shadow-[0_0_12px_rgba(255,255,255,0.7)]">
+      <div className="absolute top-[70%] right-[5%] sm:top-[20%] sm:right-[10%] md:top-[22%] md:right-[15%] lg:top-[25%] lg:right-[18%] text-gray-100 opacity-90 animate-pulse delay-700 pointer-events-none drop-shadow-[0_0_12px_rgba(255,255,255,0.7)]">
          <svg className="w-5 h-5 md:w-6 md:h-6" viewBox="0 0 24 24" fill="currentColor">
            <path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" />
          </svg>
