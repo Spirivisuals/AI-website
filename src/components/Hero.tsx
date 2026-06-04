@@ -8,28 +8,28 @@ const Hero = () => {
       {/* Background Stars (Constellation effect) */}
       
       {/* 1. Большая голубая звездочка (Слева сверху) */}
-      <div className="absolute top-[12%] left-[4%] sm:top-[15%] sm:left-[8%] md:top-[18%] md:left-[15%] lg:top-[20%] lg:left-[20%] text-cyan-400 opacity-100 animate-pulse pointer-events-none drop-shadow-[0_0_15px_rgba(34,211,238,0.8)]">
+      <div className="absolute top-[35%] left-[3%] sm:top-[15%] sm:left-[8%] md:top-[18%] md:left-[15%] lg:top-[20%] lg:left-[20%] text-cyan-400 opacity-100 animate-pulse pointer-events-none drop-shadow-[0_0_15px_rgba(34,211,238,0.8)]">
          <svg className="w-8 h-8 md:w-10 md:h-10" viewBox="0 0 24 24" fill="currentColor">
            <path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" />
          </svg>
       </div>
       
       {/* 2. Средняя белая звездочка (Справа сверху) */}
-      <div className="absolute top-[22%] right-[5%] sm:top-[20%] sm:right-[10%] md:top-[22%] md:right-[15%] lg:top-[25%] lg:right-[18%] text-gray-100 opacity-90 animate-pulse delay-700 pointer-events-none drop-shadow-[0_0_12px_rgba(255,255,255,0.7)]">
+      <div className="absolute top-[56%] right-[5%] sm:top-[20%] sm:right-[10%] md:top-[22%] md:right-[15%] lg:top-[25%] lg:right-[18%] text-gray-100 opacity-90 animate-pulse delay-700 pointer-events-none drop-shadow-[0_0_12px_rgba(255,255,255,0.7)]">
          <svg className="w-5 h-5 md:w-6 md:h-6" viewBox="0 0 24 24" fill="currentColor">
            <path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" />
          </svg>
       </div>
 
-      {/* 3. Маленькая голубая звездочка (Слева снизу) - ТЕПЕРЬ ВИДНА НА МОБИЛКАХ И СДВИНУТА К КРАЮ */}
-      <div className="absolute top-[60%] left-[5%] sm:top-[65%] sm:left-[10%] md:top-[65%] md:left-[15%] lg:top-[65%] lg:left-[18%] text-cyan-400 opacity-80 animate-pulse delay-300 pointer-events-none drop-shadow-[0_0_10px_rgba(34,211,238,0.6)]">
+      {/* 3. Маленькая голубая звездочка (Слева снизу) - СКРЫТА НА МОБИЛКАХ, ВИДНА НА ПК */}
+      <div className="hidden sm:block absolute top-[60%] left-[5%] sm:top-[65%] sm:left-[10%] md:top-[65%] md:left-[15%] lg:top-[65%] lg:left-[18%] text-cyan-400 opacity-80 animate-pulse delay-300 pointer-events-none drop-shadow-[0_0_10px_rgba(34,211,238,0.6)]">
          <svg className="w-4 h-4 md:w-5 md:h-5" viewBox="0 0 24 24" fill="currentColor">
            <path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" />
          </svg>
       </div>
 
-      {/* 4. Крошечная белая звездочка (Справа снизу) - ТЕПЕРЬ ВИДНА НА МОБИЛКАХ И СДВИНУТА К КРАЮ */}
-      <div className="absolute top-[78%] right-[6%] sm:top-[75%] sm:right-[12%] md:top-[78%] md:right-[18%] lg:top-[80%] lg:right-[22%] text-gray-200 opacity-70 animate-pulse delay-500 pointer-events-none drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">
+      {/* 4. Крошечная белая звездочка (Справа снизу) - СКРЫТА НА МОБИЛКАХ, ВИДНА НА ПК */}
+      <div className="hidden sm:block absolute top-[78%] right-[6%] sm:top-[75%] sm:right-[12%] md:top-[78%] md:right-[18%] lg:top-[80%] lg:right-[22%] text-gray-200 opacity-70 animate-pulse delay-500 pointer-events-none drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">
          <svg className="w-3 h-3 md:w-4 md:h-4" viewBox="0 0 24 24" fill="currentColor">
            <path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z" />
          </svg>
