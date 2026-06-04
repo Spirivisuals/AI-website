@@ -38,7 +38,7 @@ const Hero = () => {
       {/* Контент Hero */}
       <div className="max-w-6xl mx-auto z-10 relative w-full">
         {/* Здесь я изменил mb-6 sm:mb-8 на mb-10 sm:mb-12, чтобы сдвинуть подстрочник вниз */}
-        <h1 className="font-sans font-bold tracking-tight leading-[1.1] mb-10 sm:mb-12 flex flex-col items-center">
+        <h1 className="font-sans font-bold tracking-tight leading-[1.1] mb-4 sm:mb-6 flex flex-col items-center">
           {/* Первая строка: Clean cuts. (Жесткая однострочность) */}
           <span className="block whitespace-nowrap text-[14vw] sm:text-[4.5rem] md:text-[5.5rem] lg:text-[6.5rem]">
             Clean cuts.
