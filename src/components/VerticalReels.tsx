@@ -6,10 +6,11 @@ const VerticalReels = () => {
       <div className="max-w-6xl mx-auto">
         <div className="mb-14 text-center md:text-left md:pl-6">
           <h2 className="text-3xl md:text-4xl font-sans font-bold mb-3">Selected Works</h2>
-          <p className="text-gray-400 text-lg">Vertical edits built for maximum retention.</p>
+          {/* Добавлен класс whitespace-nowrap для последних двух слов */}
+          <p className="text-gray-400 text-lg">Vertical edits built for <span className="whitespace-nowrap">maximum retention.</span></p>
         </div>
 
-        {/* Исправленная сетка: 1 колонка на мобилках, 3 колонки на ПК (начиная с md) */}
+        {/* Сетка: 1 колонка на мобилках, 3 колонки на ПК (начиная с md) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mx-auto justify-items-center">
           
           {/* Card 1 */}
