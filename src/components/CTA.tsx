@@ -3,7 +3,6 @@ import { Mail, Send } from 'lucide-react';
 
 const CTA = () => {
   return (
-    {/* 1. Идеальная центровка: min-h-[100dvh] заставит блок занять весь экран по высоте и выровнять контент строго по центру */}
     <section className="relative min-h-[100dvh] flex flex-col justify-center items-center px-4 pt-20 pb-10 overflow-hidden">
       <div className="max-w-4xl mx-auto text-center z-10 w-full relative">
         
@@ -27,12 +26,12 @@ const CTA = () => {
             Let's talk about <span className="whitespace-nowrap">your project.</span>
           </h2>
           
-          {/* 2. Подстрочник: отступ снизу аккуратный (mb-8 sm:mb-10) для связи с кнопками */}
+          {/* Подстрочник: отступ снизу аккуратный (mb-8 sm:mb-10) для связи с кнопками */}
           <p className="text-xl sm:text-2xl md:text-4xl font-serif italic font-normal text-gray-300 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed">
             Ready to bring your vision to life?
           </p>
           
-          {/* 3. Кнопки: убран огромный лишний отступ mt-8, теперь они привязаны к тексту */}
+          {/* Кнопки: убран огромный лишний отступ mt-8, теперь они привязаны к тексту */}
           <div className="w-full mx-auto flex flex-wrap items-center justify-center gap-3 sm:gap-4">
             <a href="https://t.me/spiri_visuals" target="_blank" rel="noopener noreferrer" className="w-[calc(50%-6px)] sm:w-auto">
               <div 
