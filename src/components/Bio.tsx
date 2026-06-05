@@ -33,7 +33,7 @@ const Bio = () => {
 
         <div className="space-y-4 md:space-y-5 text-[16px] leading-[1.6] md:text-[1.25rem] text-gray-300 font-light">
           <p>
-            I’m a video editor and motion designer focused on visual clarity. My job is to strip away the noise and build narratives that actually flow.
+            I’m a video editor and motion designer focused on visual clarity. My job is to strip away the noise and build narratives <span className="whitespace-nowrap">that actually flow.</span>
           </p>
           <p>
             Whether I'm structuring a complex long-form project or cutting a fast-paced short, I rely on strict pacing and clean design to hold the audience's attention from the first <span className="whitespace-nowrap">frame to the last.</span>
